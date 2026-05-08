@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Blog — Rutina y Tradiciones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="encabezado">
+    <div class="blog-wrapper">
+      <span class="blog-label">Blog de Estilo de Vida</span>
+      <h1 class="blog-title">Mi Rutina Diaria</h1>
+      <p class="blog-tagline">Explorando hábitos, tradiciones familiares y la belleza de lo cotidiano a través de la escritura.</p>
+      <nav class="menu">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="blog.html">Blog</a>
+        <a href="sobre-mi.html">Sobre Mí</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="blog-wrapper">
+    <div class="main-grid">
+
+      <!-- COLUMNA PRINCIPAL -->
+      <main class="cuerpo">
+        
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=1200&h=600" alt="Bienvenida" class="hero-img">
+          <div class="hero-content">
+            <h2>Bienvenido a Mi Mundo</h2>
+            <p>Un espacio dedicado a compartir mis experiencias diarias, tradiciones familiares y reflexiones sobre la vida.</p>
+            <a href="blog.html" class="cta-button">Leer Artículos</a>
+          </div>
+        </section>
+
+        <!-- Últimos Artículos -->
+        <section class="latest-posts">
+          <h2>Últimos Artículos</h2>
+          
+          <article class="post-card-preview">
+            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=600&h=400" alt="Rutina Escolar" class="post-preview-img">
+            <div class="post-preview-content">
+              <div class="post-meta">
+                <span class="category">Rutina Escolar</span>
+                <span>6 de Mayo de 2026</span>
+              </div>
+              <h3>Un día en el instituto: entre clases y amistades</h3>
+              <p>Cada mañana el despertador suena a las seis y media. Me levanto, preparo el desayuno y salgo de casa con tiempo suficiente...</p>
+              <a href="blog.html" class="read-more">Leer más →</a>
+            </div>
+          </article>
+
+          <article class="post-card-preview">
+            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=600&h=400" alt="Familia" class="post-preview-img">
+            <div class="post-preview-content">
+              <div class="post-meta">
+                <span class="category">Familia</span>
+                <span>29 de Abril de 2026</span>
+              </div>
+              <h3>Las tradiciones que heredamos en casa</h3>
+              <p>En mi familia existen tradiciones que vienen de generaciones anteriores. El domingo es el día de todos...</p>
+              <a href="blog.html" class="read-more">Leer más →</a>
+            </div>
+          </article>
+
+          <article class="post-card-preview">
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=600&h=400" alt="Ocio" class="post-preview-img">
+            <div class="post-preview-content">
+              <div class="post-meta">
+                <span class="category">Ocio y Cultura</span>
+                <span>15 de Abril de 2026</span>
+              </div>
+              <h3>Mi tarde libre favorita</h3>
+              <p>Cuando llega el fin de semana, me encanta dedicar tiempo a mis hobbies favoritos. Desde leer hasta explorar nuevos lugares...</p>
+              <a href="blog.html" class="read-more">Leer más →</a>
+            </div>
+          </article>
+
+        </section>
+
+      </main>
+
+      <!-- BARRA LATERAL -->
+      <aside class="barra-lateral">
+        
+        <!-- Widget Sobre Mí -->
+        <div class="widget">
+          <h4>Sobre Mí</h4>
+          <div class="about-avatar"></div>
+          <p class="about-text">
+            ¡Hola! Soy estudiante y me apasiona contar historias sobre la vida cotidiana, la familia y las tradiciones que nos moldean. Este blog es mi espacio de reflexión.
+          </p>
+          <a href="sobre-mi.html" class="widget-link">Conoce más sobre mí →</a>
+        </div>
+
+        <!-- Widget Redes Sociales -->
+        <div class="widget">
+          <h4>Sígueme</h4>
+          <div class="social-links">
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">YouTube</a>
+            <a href="#" class="social-link">LinkedIn</a>
+          </div>
+        </div>
+
+        <!-- Widget Categorías -->
+        <div class="widget">
+          <h4>Categorías</h4>
+          <ul>
+            <li><a href="#"># Rutina Escolar</a></li>
+            <li><a href="#"># Familia y Tradiciones</a></li>
+            <li><a href="#"># Ocio y Cultura</a></li>
+            <li><a href="#"># Salud y Bienestar</a></li>
+          </ul>
+        </div>
+
+        <!-- Widget Newsletter -->
+        <div class="widget">
+          <h4>Boletín Informativo</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 1rem; color: var(--muted);">Recibe las novedades directamente en tu e-mail.</p>
+          <input type="email" placeholder="Tu e-mail" style="width: 100%; padding: 0.8rem; border: 1px solid var(--sand); border-radius: 4px; margin-bottom: 0.5rem;">
+          <button style="width: 100%; background: var(--ink); color: white; border: none; padding: 0.8rem; border-radius: 4px; cursor: pointer;">Suscribirse</button>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="pie-pagina">
+    <div class="blog-wrapper">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>Mi Blog</h2>
+          <p>Compartiendo momentos, creando memorias y celebrando la vida cotidiana desde 2026.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Explorar</h5>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Términos de Uso</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2026 Mi Rutina Diaria. Todos los derechos reservados. Creado con pasión.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

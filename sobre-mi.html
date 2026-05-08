@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Mí — Mi Rutina Diaria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .about-hero {
+      background: linear-gradient(135deg, var(--rust) 0%, var(--ink) 100%);
+      color: var(--cream);
+      padding: 4rem 0;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .about-hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      margin-bottom: 4rem;
+    }
+
+    .about-text-section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--ink);
+    }
+
+    .about-text-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #4a4138;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-image {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+
+    .timeline {
+      margin-top: 4rem;
+    }
+
+    .timeline h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: var(--ink);
+    }
+
+    .timeline-item {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--sand);
+    }
+
+    .timeline-item:last-child {
+      border-bottom: none;
+    }
+
+    .timeline-year {
+      font-weight: bold;
+      color: var(--rust);
+      min-width: 80px;
+      font-size: 1.2rem;
+    }
+
+    .timeline-content h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: var(--ink);
+    }
+
+    .timeline-content p {
+      color: #4a4138;
+      line-height: 1.6;
+    }
+
+    .skills {
+      margin-top: 4rem;
+      background: var(--cream);
+      padding: 3rem;
+      border-radius: 12px;
+    }
+
+    .skills h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: var(--ink);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+
+    .skill-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+    }
+
+    .skill-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .skill-card h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: var(--ink);
+    }
+
+    .skill-card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 768px) {
+      .about-content {
+        grid-template-columns: 1fr;
+      }
+
+      .about-hero h2 {
+        font-size: 2rem;
+      }
+
+      .about-text-section h3 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="encabezado">
+    <div class="blog-wrapper">
+      <span class="blog-label">Blog de Estilo de Vida</span>
+      <h1 class="blog-title">Mi Rutina Diaria</h1>
+      <p class="blog-tagline">Explorando hábitos, tradiciones familiares y la belleza de lo cotidiano a través de la escritura.</p>
+      <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="blog.html">Blog</a>
+        <a href="sobre-mi.html" class="active">Sobre Mí</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SECCIÓN HERO -->
+  <div class="about-hero">
+    <div class="blog-wrapper">
+      <h2>Conoce Mi Historia</h2>
+      <p>Un viaje a través de mis pasiones, experiencias y lo que me define.</p>
+    </div>
+  </div>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="blog-wrapper">
+    
+    <!-- Sección Sobre Mí -->
+    <div class="about-content">
+      <div class="about-text-section">
+        <h3>¿Quién Soy?</h3>
+        <p>
+          Hola, soy un estudiante apasionado por la escritura y la narración de historias. Desde pequeño, siempre me ha fascinado documentar los momentos cotidianos que muchas personas pasan por alto.
+        </p>
+        <p>
+          Este blog nació como una actividad escolar, pero se convirtió en algo mucho más significativo: un espacio donde puedo reflexionar sobre mi vida, compartir mis experiencias y conectar con otras personas que comparten mis intereses.
+        </p>
+        <p>
+          Creo que cada día tiene algo especial que contar, y mi misión es ayudar a otros a ver la belleza en lo ordinario.
+        </p>
+      </div>
+      <div>
+        <img src="./arthur.png" alt="Mi foto" class="about-image">
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline">
+      <h3>Mi Trayectoria</h3>
+      
+      <div class="timeline-item">
+        <div class="timeline-year">2015</div>
+        <div class="timeline-content">
+          <h4>Primeros Pasos en la Escritura</h4>
+          <p>Comencé a escribir en un diario personal, documentando mis pensamientos y experiencias escolares.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">2020</div>
+        <div class="timeline-content">
+          <h4>Descubrimiento de la Narrativa</h4>
+          <p>Participé en un proyecto escolar de escritura creativa que me inspiró a explorar nuevas formas de contar historias.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">2024</div>
+        <div class="timeline-content">
+          <h4>Creación del Blog</h4>
+          <p>Lancé este blog como una plataforma para compartir mis reflexiones diarias y conectar con una comunidad más amplia.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">2026</div>
+        <div class="timeline-content">
+          <h4>Crecimiento y Expansión</h4>
+          <p>El blog ha crecido exponencialmente, con miles de lectores interesados en mis historias y perspectivas sobre la vida.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Habilidades -->
+    <div class="skills">
+      <h3>Mis Habilidades</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">✍️</div>
+          <h4>Escritura Creativa</h4>
+          <p>Especializado en narrativas personales y reflexiones profundas sobre la vida cotidiana.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">📸</div>
+          <h4>Fotografía</h4>
+          <p>Captura de momentos especiales que complementan mis historias con imágenes impactantes.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🎬</div>
+          <h4>Producción de Video</h4>
+          <p>Creación de contenido visual que enriquece la experiencia de mis lectores.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">💡</div>
+          <h4>Pensamiento Crítico</h4>
+          <p>Análisis profundo de temas sociales y personales con perspectivas innovadoras.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="pie-pagina">
+    <div class="blog-wrapper">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>Mi Blog</h2>
+          <p>Compartiendo momentos, creando memorias y celebrando la vida cotidiana desde 2026.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Explorar</h5>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Términos de Uso</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2026 Mi Rutina Diaria. Todos los derechos reservados. Creado con pasión.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Mi Rutina Diaria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="encabezado">
+    <div class="blog-wrapper">
+      <span class="blog-label">Blog de Estilo de Vida</span>
+      <h1 class="blog-title">Mi Rutina Diaria</h1>
+      <p class="blog-tagline">Explorando hábitos, tradiciones familiares y la belleza de lo cotidiano a través de la escritura.</p>
+      <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="sobre-mi.html">Sobre Mí</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="blog-wrapper">
+    <div class="main-grid">
+
+      <!-- COLUMNA DEL POST -->
+      <main class="cuerpo">
+        <article class="post-card">
+          <!-- Imagen Principal -->
+          <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=1200&h=600" alt="Mesa de trabajo con café" class="post-header-img">
+          
+          <div class="post-body">
+            <div class="post-meta">
+              <span class="category">Rutina Escolar</span>
+              <span>6 de Mayo de 2026</span>
+              <span>5 min de lectura</span>
+            </div>
+            
+            <h2>Un día en el instituto: entre clases y amistades</h2>
+            
+            <div class="post-content">
+              <p>
+                Cada mañana el despertador suena a las seis y media. Me levanto, preparo el desayuno y salgo de casa con tiempo suficiente para no llegar tarde. La primera clase del día siempre parece la más larga, pero cuando llegamos a la hora del recreo, el tiempo vuela.
+              </p>
+              
+              <p>
+                Mis compañeros de clase son un grupo muy diverso: algunos viven cerca del instituto, otros viajan más de media hora todos los días. Esa diferencia nos ha enseñado a valorar el tiempo que pasamos juntos. Los profesores, por su parte, intentan hacer las clases más dinámicas con debates y actividades en grupo.
+              </p>
+
+              <!-- SECCIÓN DE VIDEO -->
+              <div class="video-section">
+                <div class="video-container">
+                  <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video de Ejemplo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-caption">
+                  Mira el video: Un resumen visual de mi semana en el instituto.
+                </div>
+              </div>
+
+              <p>
+                Más allá de las clases, lo que realmente hace especial el día son los pequeños momentos: la charla en el pasillo, el proyecto compartido en la biblioteca y el apoyo mutuo antes de un examen difícil. La rutina puede parecer repetitiva, pero son las personas quienes la hacen única.
+              </p>
+            </div>
+          </div>
+
+          <!-- SECCIÓN DE COMENTARIOS -->
+          <section class="comments-box">
+            <h3>Comentarios (<span id="comment-count">0</span>)</h3>
+
+            <div id="comment-list" class="comment-list">
+              <!-- Los comentarios se cargarán aquí con JavaScript -->
+            </div>
+
+            <!-- Formulario de Comentario -->
+            <div class="comment-form">
+              <h4>Deja un comentario</h4>
+              <input type="text" id="comment-name" placeholder="Tu nombre completo" required>
+              <textarea id="comment-text" rows="4" placeholder="¿Qué te pareció esta entrada?" required></textarea>
+              <button type="button" id="submit-comment">Publicar Comentario</button>
+            </div>
+          </section>
+        </article>
+
+        <!-- Segundo Post (Resumen) -->
+        <article class="post-card">
+          <div class="post-body">
+            <div class="post-meta">
+              <span class="category">Familia</span>
+              <span>29 de Abril de 2026</span>
+            </div>
+            <h2>Las tradiciones que heredamos en casa</h2>
+            <p>
+              En mi familia existen tradiciones que vienen de generaciones anteriores. El domingo es el día de todos: el almuerzo reúne a tíos, abuelos y primos alrededor de una mesa grande...
+            </p>
+            <a href="#" style="color: var(--rust); font-weight: bold; text-decoration: none;">Leer más →</a>
+          </div>
+        </article>
+      </main>
+
+      <!-- BARRA LATERAL -->
+      <aside class="barra-lateral">
+        
+        <!-- Widget Sobre Mí -->
+        <div class="widget">
+          <h4>Sobre Mí</h4>
+          <div class="about-avatar"></div>
+          <p class="about-text">
+            ¡Hola! Soy estudiante y me apasiona contar historias sobre la vida cotidiana, la familia y las tradiciones que nos moldean. Este blog es mi espacio de reflexión.
+          </p>
+        </div>
+
+        <!-- Widget Redes Sociales -->
+        <div class="widget">
+          <h4>Sígueme</h4>
+          <div class="social-links">
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">YouTube</a>
+            <a href="#" class="social-link">LinkedIn</a>
+          </div>
+        </div>
+
+        <!-- Widget Categorías -->
+        <div class="widget">
+          <h4>Categorías</h4>
+          <ul>
+            <li><a href="#"># Rutina Escolar</a></li>
+            <li><a href="#"># Familia y Tradiciones</a></li>
+            <li><a href="#"># Ocio y Cultura</a></li>
+            <li><a href="#"># Salud y Bienestar</a></li>
+          </ul>
+        </div>
+
+        <!-- Widget Newsletter -->
+        <div class="widget">
+          <h4>Boletín Informativo</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 1rem; color: var(--muted);">Recibe las novedades directamente en tu e-mail.</p>
+          <input type="email" placeholder="Tu e-mail" style="width: 100%; padding: 0.8rem; border: 1px solid var(--sand); border-radius: 4px; margin-bottom: 0.5rem;">
+          <button style="width: 100%; background: var(--ink); color: white; border: none; padding: 0.8rem; border-radius: 4px; cursor: pointer;">Suscribirse</button>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="pie-pagina">
+    <div class="blog-wrapper">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>Mi Blog</h2>
+          <p>Compartiendo momentos, creando memorias y celebrando la vida cotidiana desde 2026.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Explorar</h5>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Términos de Uso</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2026 Mi Rutina Diaria. Todos los derechos reservados. Creado con pasión.
+      </div>
+    </div>
+  </footer>
+
+  <script src="comments.js"></script>
+
+</body>
+</html>
